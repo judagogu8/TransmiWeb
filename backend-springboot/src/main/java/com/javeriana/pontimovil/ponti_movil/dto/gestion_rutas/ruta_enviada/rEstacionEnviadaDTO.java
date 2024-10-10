@@ -6,7 +6,7 @@ import lombok.*;
 import java.io.Serializable;
 import java.util.UUID;
 
-@Getter
+Long
 @Setter
 @AllArgsConstructor
 @EqualsAndHashCode

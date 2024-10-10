@@ -40,11 +40,6 @@ public class ConductorController {
         conductorService.crearConductor(conductor);
     }
 
-    // @PostMapping("/{id}/actualizar")
-    // public void actualizarConductor(@Valid Conductor conductor) {
-    //     conductorService.actualizarConductor(conductor.getId(), conductor);        
-    // }
-
     @PostMapping("/{id}/actualizar")
         public void actualizarConductor(@PathVariable UUID id, @RequestBody Conductor conductor) {
             conductorService.actualizarConductor(id, conductor);
