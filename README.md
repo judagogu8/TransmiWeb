@@ -31,12 +31,6 @@ Conoce al equipo detrás de **Ponti-Movil**:
         <p><strong>Juan David González</strong><br>CEO Ponti-Movil</p>
       </a>
     </td>
-    <td align="center">
-      <a href="https://github.com/Nidhood" target="_blank">
-        <img src="https://github.com/Nidhood/Ponti-movil/blob/main/photos/Ivan-Orozco.jpeg?s=100" alt="Ivan Dario Orozco" width="100" height="100">
-        <p><strong>Ivan Dario Orozco</strong><br>Backend & Frontend Developer</p>
-      </a>
-    </td>
   </tr>
 </table>
 
