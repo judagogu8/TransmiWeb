@@ -1,0 +1,31 @@
+<div class="modal">
+  <div class="modal-header">
+    <h2 class="bus-placa">
+      <i class="icon-bus"></i>
+      {{ bus?.placa }} - {{ bus?.modelo }}
+    </h2>
+    <button class="modal-close" (click)="cerrarDetalle()">×</button>
+  </div>
+
+  <div class="modal-content">
+    <div *ngIf="isLoading; else content" class="loading-container">
+      <ng-lottie [options]="loadingOptions"></ng-lottie>
+    </div>
+
+    <ng-template #content>
+      <div class="section">
+        <h3><i class="icon-bus"></i> Rutas Asignadas:</h3>
+        <ul>
+          <!-- Validamos que existan rutas asignadas a través de las asignaciones -->
+          <li *ngFor="let ruta of rutasAsignadas">{{ ruta.codigo }}</li>
+          <li *ngIf="!rutasAsignadas.length">No hay rutas asignadas a este bus.</li>
+        </ul>
+      </div>
+    </ng-template>
+  </div>
+
+  <div class="edit-btn">
+    <!-- Usamos botones de PrimeNG para consistencia -->
+    <button pButton label="Editar" icon="pi pi-pencil" class="p-button-secondary" (click)="editarBus()"></button>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.seccion {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  background-color: #e30613;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.p-button-text {
+  margin-right: 10px;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.p-button-text .pi {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}

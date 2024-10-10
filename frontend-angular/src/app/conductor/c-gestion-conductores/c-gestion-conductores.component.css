@@ -1,0 +1,14 @@
+.nuevoConductor{
+    text-align: right;
+}
+p-table{
+    padding: 5%;
+}
+tr td{
+    text-align: center;
+  }
+
+  tr th{
+    text-align: center;
+
+  }

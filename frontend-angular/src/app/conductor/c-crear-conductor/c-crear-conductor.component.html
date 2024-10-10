@@ -1,0 +1,46 @@
+<div class="crearConductor">
+  <h2>Crear nuevo conductor</h2>
+
+  <form [formGroup]="conductorForm" (ngSubmit)="crearConductor()">
+    <label for="nombreConductor">Nombre: </label>
+    <input type="text" formControlName="nombre" id="nombreConductor" required>
+
+    <label for="apellidoConductor">Apellido: </label>
+    <input type="text" formControlName="apellido" id="apellidoConductor" required>
+
+    <label for="cedulaConductor">Cédula: </label>
+    <input type="text" formControlName="cedula" id="cedulaConductor" required>
+
+    <label for="telConductor">Teléfono: </label>
+    <input type="text" formControlName="telefono" id="telConductor" required>
+
+    <label>Dirección: </label>
+    <div class="direccion-container">
+      <label for="tipoVia">Tipo de vía: </label>
+      <select id="tipoVia" formControlName="tipoVia" required>
+        <option value="Calle">Calle</option>
+        <option value="Carrera">Carrera</option>
+        <option value="Avenida">Avenida</option>
+        <option value="Diagonal">Diagonal</option>
+        <option value="Transversal">Transversal</option>
+        <option value="Circular">Circular</option>
+        <option value="Manzana">Manzana</option>
+        <option value="Kilómetro">Kilómetro</option>
+      </select>
+
+      <label class="direccion" for="numeroVia">Número: </label>
+      <input type="text" formControlName="numeroVia" id="numeroVia" placeholder="Número" required>
+
+      <label class="direccion" for="numero">#</label>
+      <input type="text" formControlName="numero" id="numero" placeholder="Número" required>
+
+      <label class="direccion" for="barrio">Barrio: </label>
+      <input type="text" formControlName="barrio" id="barrio" required>
+
+      <label class="direccion" for="localidad">Localidad: </label>
+      <input type="text" formControlName="localidad" id="localidad" required>
+    </div>
+
+    <button type="submit" [disabled]="conductorForm.invalid">Crear</button>
+  </form>
+</div>
